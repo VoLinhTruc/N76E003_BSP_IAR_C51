@@ -102,7 +102,7 @@ void Timer3_Delay100ms(UINT32 u32CNT)
 //------------------------------------------------------------------------------
 void Timer3_Delay10us(UINT32 u32CNT)
 {
-    T3CON = 0x07;                           		//Timer3 Clock = Fsys/128
+    T3CON = 0x02;                           		//Timer3 Clock = Fsys/128
     set_TR3;                                		//Trigger Timer3
     while (u32CNT != 0)
     {
